@@ -1,0 +1,25 @@
+@model Concurso.App.gestion.Application.DTOs.UsuarioDto
+@{
+    ViewData["Title"] = "Eliminar Usuario";
+}
+<div class="card shadow-sm mt-4">
+    <div class="card-header bg-danger text-white">
+        <i class="fa fa-user-times"></i> Eliminar Usuario
+    </div>
+    <div class="card-body">
+        <h5>¿Está seguro que desea eliminar este usuario?</h5>
+        <dl class="row">
+            <dt class="col-sm-3">Nombre</dt>
+            <dd class="col-sm-9">@Model.Nombre</dd>
+            <dt class="col-sm-3">Correo</dt>
+            <dd class="col-sm-9">@Model.Correo</dd>
+        </dl>
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="d-flex justify-content-between">
+                <a asp-action="Index" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> Cancelar</a>
+                <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</button>
+            </div>
+        </form>
+    </div>
+</div>

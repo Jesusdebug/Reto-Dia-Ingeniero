@@ -1,0 +1,25 @@
+@model Concurso.App.gestion.Application.DTOs.DetallePedidoDto
+@{
+    ViewData["Title"] = "Detalle Detalle de Pedido";
+}
+<div class="card shadow-sm mt-4">
+    <div class="card-header bg-info text-white">
+        <i class="fa fa-list"></i> Detalle Detalle de Pedido
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Pedido</dt>
+            <dd class="col-sm-9">@Model.PedidoId</dd>
+            <dt class="col-sm-3">Producto</dt>
+            <dd class="col-sm-9">@Model.ProductoNombre</dd>
+            <dt class="col-sm-3">Cantidad</dt>
+            <dd class="col-sm-9">@Model.Cantidad</dd>
+            <dt class="col-sm-3">Precio Unitario</dt>
+            <dd class="col-sm-9">@Model.PrecioUnitario.ToString("C")</dd>
+        </dl>
+        <div class="d-flex justify-content-between">
+            <a asp-action="Index" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> Volver</a>
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-info"><i class="fa fa-edit"></i> Editar</a>
+        </div>
+    </div>
+</div>

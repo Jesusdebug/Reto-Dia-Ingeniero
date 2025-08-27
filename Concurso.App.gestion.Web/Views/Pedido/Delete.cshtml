@@ -1,0 +1,27 @@
+@model Concurso.App.gestion.Application.DTOs.PedidoDto
+@{
+    ViewData["Title"] = "Eliminar Pedido";
+}
+<div class="card shadow-sm mt-4">
+    <div class="card-header bg-danger text-white">
+        <i class="fa fa-trash"></i> Eliminar Pedido
+    </div>
+    <div class="card-body">
+        <h5>¿Está seguro que desea eliminar este pedido?</h5>
+        <dl class="row">
+            <dt class="col-sm-3">Fecha</dt>
+            <dd class="col-sm-9">@Model.Fecha.ToString("dd/MM/yyyy")</dd>
+            <dt class="col-sm-3">Total</dt>
+            <dd class="col-sm-9">@Model.Total.ToString("C")</dd>
+            <dt class="col-sm-3">Usuario</dt>
+            <dd class="col-sm-9">@Model.UsuarioNombre</dd>
+        </dl>
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="d-flex justify-content-between">
+                <a asp-action="Index" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> Cancelar</a>
+                <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\bin\Debug\net8.0\Concurso.App.gestion.Application.deps.json
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\bin\Debug\net8.0\Concurso.App.gestion.Application.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\bin\Debug\net8.0\Concurso.App.gestion.Application.pdb
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\bin\Debug\net8.0\Concurso.App.gestion.Domain.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\bin\Debug\net8.0\Concurso.App.gestion.Infrastructure.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\bin\Debug\net8.0\Concurso.App.gestion.Domain.pdb
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\bin\Debug\net8.0\Concurso.App.gestion.Infrastructure.pdb
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\obj\Debug\net8.0\Concurso.App.gestion.Application.csproj.AssemblyReference.cache
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\obj\Debug\net8.0\Concurso.App.gestion.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\obj\Debug\net8.0\Concurso.App.gestion.Application.AssemblyInfoInputs.cache
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\obj\Debug\net8.0\Concurso.App.gestion.Application.AssemblyInfo.cs
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\obj\Debug\net8.0\Concurso.App.gestion.Application.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\obj\Debug\net8.0\Concurso.5ED25BFE.Up2Date
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\obj\Debug\net8.0\Concurso.App.gestion.Application.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\obj\Debug\net8.0\refint\Concurso.App.gestion.Application.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\obj\Debug\net8.0\Concurso.App.gestion.Application.pdb
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Application\obj\Debug\net8.0\ref\Concurso.App.gestion.Application.dll

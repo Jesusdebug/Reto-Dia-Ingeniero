@@ -1,0 +1,68 @@
+@model IEnumerable<Concurso.App.gestion.Application.DTOs.PedidoDto>
+@{
+    ViewData["Title"] = "Reporte de Pedidos";
+}
+<div class="card shadow mb-4">
+    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+        <span><i class="fa fa-chart-bar"></i> Reporte de Pedidos</span>
+        <div>
+            <a class="btn btn-outline-success btn-sm me-2" asp-action="ExportarExcel"><i class="fa fa-file-excel"></i> Exportar Excel</a>
+            <a class="btn btn-outline-danger btn-sm" asp-action="ExportarPdf"><i class="fa fa-file-pdf"></i> Exportar PDF</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover table-striped align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Id</th>
+                        <th>Fecha</th>
+                        <th>Total</th>
+                        <th>Usuario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Fecha.ToString("dd/MM/yyyy")</td>
+                        <td>@item.Total.ToString("C")</td>
+                        <td>@item.UsuarioNombre</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-4">
+            <canvas id="reporteChart" height="80"></canvas>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('reporteChart').getContext('2d');
+        var reporteChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: @Html.Raw(ViewBag.MesesLabels),
+                datasets: [{
+                    label: 'Total Ventas',
+                    data: @Html.Raw(ViewBag.VentasPorMes),
+                    backgroundColor: 'rgba(13,110,253,0.2)',
+                    borderColor: '#0d6efd',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: true }
+                }
+            }
+        });
+    </script>
+}

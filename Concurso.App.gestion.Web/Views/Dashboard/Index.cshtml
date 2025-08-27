@@ -1,0 +1,73 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<div class="row g-4 mb-4">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary shadow h-100">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <i class="fa fa-users fa-2x mb-2"></i>
+                <h5 class="card-title">Usuarios</h5>
+                <h2 class="fw-bold">@ViewBag.TotalUsuarios</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-success shadow h-100">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <i class="fa fa-box fa-2x mb-2"></i>
+                <h5 class="card-title">Pedidos</h5>
+                <h2 class="fw-bold">@ViewBag.TotalPedidos</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-info shadow h-100">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <i class="fa fa-tag fa-2x mb-2"></i>
+                <h5 class="card-title">Productos</h5>
+                <h2 class="fw-bold">@ViewBag.TotalProductos</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-warning shadow h-100">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <i class="fa fa-dollar-sign fa-2x mb-2"></i>
+                <h5 class="card-title">Total Ventas</h5>
+                <h2 class="fw-bold">@ViewBag.TotalVentas?.ToString("C")</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card shadow mb-4">
+    <div class="card-header bg-primary text-white">
+        <i class="fa fa-chart-bar"></i> Pedidos por Mes
+    </div>
+    <div class="card-body">
+        <canvas id="pedidosChart" height="80"></canvas>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('pedidosChart').getContext('2d');
+        var pedidosChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(ViewBag.MesesLabels),
+                datasets: [{
+                    label: 'Pedidos',
+                    data: @Html.Raw(ViewBag.PedidosPorMes),
+                    backgroundColor: '#0d6efd',
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+    </script>
+}

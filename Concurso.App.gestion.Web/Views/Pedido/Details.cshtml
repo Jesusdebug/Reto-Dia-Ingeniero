@@ -1,0 +1,23 @@
+@model Concurso.App.gestion.Application.DTOs.PedidoDto
+@{
+    ViewData["Title"] = "Detalle Pedido";
+}
+<div class="card shadow-sm mt-4">
+    <div class="card-header bg-info text-white">
+        <i class="fa fa-box"></i> Detalle Pedido
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Fecha</dt>
+            <dd class="col-sm-9">@Model.Fecha.ToString("dd/MM/yyyy")</dd>
+            <dt class="col-sm-3">Total</dt>
+            <dd class="col-sm-9">@Model.Total.ToString("C")</dd>
+            <dt class="col-sm-3">Usuario</dt>
+            <dd class="col-sm-9">@Model.UsuarioNombre</dd>
+        </dl>
+        <div class="d-flex justify-content-between">
+            <a asp-action="Index" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> Volver</a>
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-info"><i class="fa fa-edit"></i> Editar</a>
+        </div>
+    </div>
+</div>

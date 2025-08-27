@@ -1,0 +1,55 @@
+@model Concurso.App.gestion.Application.DTOs.DetallePedidoDto
+@{
+    ViewData["Title"] = "Nuevo Detalle de Pedido";
+}
+<div class="card shadow-sm mt-4">
+    <div class="card-header bg-primary text-white">
+        <i class="fa fa-plus"></i> Nuevo Detalle de Pedido
+    </div>
+    <div class="card-body">
+        <form asp-action="Create" method="post" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label asp-for="PedidoId" class="form-label">Pedido</label>
+                <input asp-for="PedidoId" class="form-control" type="number" required />
+                <span asp-validation-for="PedidoId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ProductoId" class="form-label">Producto</label>
+                <input asp-for="ProductoId" class="form-control" type="number" required />
+                <span asp-validation-for="ProductoId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Cantidad" class="form-label"></label>
+                <input asp-for="Cantidad" class="form-control" type="number" required />
+                <span asp-validation-for="Cantidad" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="PrecioUnitario" class="form-label"></label>
+                <input asp-for="PrecioUnitario" class="form-control" type="number" step="0.01" required />
+                <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <a asp-action="Index" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> Volver</a>
+                <button type="submit" class="btn btn-success gradient-blue"><i class="fa fa-save"></i> Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        (() => {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+}

@@ -1,0 +1,17 @@
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\bin\Debug\net8.0\Concurso.App.gestion.Infrastructure.deps.json
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\bin\Debug\net8.0\Concurso.App.gestion.Infrastructure.runtimeconfig.json
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\bin\Debug\net8.0\Concurso.App.gestion.Infrastructure.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\bin\Debug\net8.0\Concurso.App.gestion.Infrastructure.pdb
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\bin\Debug\net8.0\Concurso.App.gestion.Domain.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\bin\Debug\net8.0\Concurso.App.gestion.Domain.pdb
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\Concurso.App.gestion.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\Concurso.App.gestion.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\Concurso.App.gestion.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\Concurso.App.gestion.Infrastructure.AssemblyInfo.cs
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\Concurso.App.gestion.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\Concurso.8FCA3F7F.Up2Date
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\Concurso.App.gestion.Infrastructure.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\refint\Concurso.App.gestion.Infrastructure.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\Concurso.App.gestion.Infrastructure.pdb
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\Concurso.App.gestion.Infrastructure.genruntimeconfig.cache
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Infrastructure\obj\Debug\net8.0\ref\Concurso.App.gestion.Infrastructure.dll

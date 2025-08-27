@@ -1,0 +1,21 @@
+@model Concurso.App.gestion.Application.DTOs.UsuarioDto
+@{
+    ViewData["Title"] = "Detalle Usuario";
+}
+<div class="card shadow-sm mt-4">
+    <div class="card-header bg-info text-white">
+        <i class="fa fa-user"></i> Detalle Usuario
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Nombre</dt>
+            <dd class="col-sm-9">@Model.Nombre</dd>
+            <dt class="col-sm-3">Correo</dt>
+            <dd class="col-sm-9">@Model.Correo</dd>
+        </dl>
+        <div class="d-flex justify-content-between">
+            <a asp-action="Index" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> Volver</a>
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-info"><i class="fa fa-edit"></i> Editar</a>
+        </div>
+    </div>
+</div>

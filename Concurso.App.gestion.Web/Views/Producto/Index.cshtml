@@ -1,0 +1,42 @@
+@model IEnumerable<Concurso.App.gestion.Application.DTOs.ProductoDto>
+@{
+    ViewData["Title"] = "Productos";
+}
+<div class="card shadow-sm mb-4">
+    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+        <span><i class="fa-solid fa-tag"></i> Productos</span>
+        <a class="btn btn-success btn-sm gradient-blue" asp-action="Create"><i class="fa fa-plus"></i> Nuevo Producto</a>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover table-striped align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Nombre</td>
+                        <td>@item.Descripcion</td>
+                        <td>@item.Precio.ToString("C")</td>
+                        <td>@item.Stock</td>
+                        <td class="text-end">
+                            <a class="btn btn-sm btn-info me-1" asp-action="Edit" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                            <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
