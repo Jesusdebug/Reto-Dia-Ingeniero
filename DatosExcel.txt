@@ -1,0 +1,18 @@
+Entidad,Atributo,Tipo de Dato,Tamaño,Descripción
+Usuario,Id,int,10,Identificador único del usuario
+Usuario,Nombre,string,200,Nombre completo del usuario
+Usuario,Correo,string,200,Correo electrónico del usuario
+Pedido,Id,int,1000,Identificador único del pedido
+Pedido,Fecha,DateTime,,Fecha en que se realizó el pedido
+Pedido,Total,decimal,12,5,Monto total del pedido
+Pedido,UsuarioId,int,100,Identificador del usuario que realizó el pedido
+DetallePedido,Id,int,100,Identificador del detalle del pedido
+DetallePedido,PedidoId,int,100,Identificador del pedido asociado
+DetallePedido,ProductoId,int,100,Identificador del producto asociado
+DetallePedido,Cantidad,int,100,Cantidad de productos
+DetallePedido,PrecioUnitario,decimal,100,Precio por unidad del producto
+Producto,Id,int,1000,Identificador del producto
+Producto,Nombre,string,200,Nombre del producto
+Producto,Descripcion,string,200,Descripción del producto
+Producto,Precio,decimal,10,2,Precio de venta
+Producto,Stock,int,1000,Cantidad disponible en inventario

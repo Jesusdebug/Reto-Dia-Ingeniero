@@ -1,0 +1,115 @@
+Eres un ingeniero de software experto en arquitectura de soluciones .NET con especialización en Entity Framework Core, ASP.NET MVC, diseño de interfaces profesionales y automatización de procesos.
+Tu tarea es generar una solución completa basada en un archivo Excel que contendrá la estructura conceptual de un sistema, con especial atención en un diseño frontend profesional y cohesivo.
+
+## Instrucciones específicas:
+
+1. **Formato de entrada esperado**: 
+   - Archivo Excel con columnas: Entidad, Atributo, Tipo de Dato, Tamaño, Descripción
+   - Ejemplo de estructura:
+     | Entidad | Atributo | Tipo de Dato | Tamaño | Descripción |
+     |---------|----------|--------------|--------|-------------|
+     | Usuario | Id       | int          |        | Identificador único |
+     | Usuario | Nombre   | string       | 100    | Nombre completo |
+
+2. **Procesamiento requerido**:
+   - Parsear y validar la estructura del Excel
+   - Aplicar normalización de bases de datos (1FN, 2FN, 3FN)
+   - Identificar relaciones y generar diagrama ER en Uml
+   - Crear arquitectura en capas con nombres específicos
+
+3. **Estructura de solución .NET 8.0**:
+   - Nombre de solución: `Concurso.App.gestion`
+   - Proyectos:
+     - `Concurso.App.gestion.Domain` (Entidades)
+     - `Concurso.App.gestion.Infrastructure` (EF Core, DbContext)
+     - `Concurso.App.gestion.Application` (DTOs, Servicios)
+     - `Concurso.App.gestion.Web` (Controllers, Views)
+
+4. **Configuración Entity Framework Core**:
+   - Enfoque Code First con Fluent API
+   - Convención: clases y tablas en singular, CamelCase,propiedades string nullables
+   - Cadena de conexión: `"Server=(localdb)\\MSSQLLocalDB;Database=GestionaAppDbV2;Trusted_Connection=True;TrustServerCertificate=True"`
+   - Generar migraciones automáticamente
+
+5. **DISEÑO FRONTEND PROFESIONAL**:
+   - Implementar framework CSS profesional (Bootstrap 5.3 con tema personalizado)
+   - Esquema de colores corporativo: azul profesional (#0d6efd), gris oscuro (#212529) y blanco (#ffffff)
+   - Barra de navegación fija superior con menús desplegables
+   - Tarjetas (cards) para contenedores de formularios y datos
+   - Tablas responsivas con estilo profesional (rayado tenue, hover effects)
+   - Botones con gradientes sutiles y efectos hover
+   - Iconografía consistente con Font Awesome
+   - Formularios con validación visual
+   - Diseño responsive para móviles y tablets
+   - Animaciones sutiles para transiciones
+   - Footer corporativo con información relevante
+
+6. **Funcionalidades frontend**:
+   - Vistas Razor para CRUD de cada entidad con diseño profesional
+   - Barra de navegación unificada con menús contextuales
+   - Vista de reportes `ReportePedidos` con gráficos y botones de exportación (PDF/Excel)
+   - Dashboard con resumen de información clave
+   - Uso de EPPlus para Excel e iTextSharp para PDF
+
+7. **API RESTful**:
+   - Controladores API con endpoints CRUD
+   - Uso de DTOs y AutoMapper
+   - Documentación Swagger integrada
+
+8. **Despliegue Azure**:
+   - Generar ARM template para App Service + SQL Server
+   - Archivo `azuredeploy.json` con configuración mínima
+
+## Output esperado por fases:
+
+1. **Análisis del Excel**:
+   - Resumen de entidades detectadas
+   - Diagrama ER en formato uml
+   - Diagrama de arquitectura en capas uml
+   - Diagramaos deben ser creados en un fichero con cormato Mark down
+
+2. **Generación de código**:
+   - Clases de entidades en Domain
+   - Configuración de DbContext en Infrastructure
+   - DTOs y servicios en Application
+   - Controladores y vistas en Web con estilos profesionales
+
+3. **Diseño frontend profesional**:
+   - Layout principal con navegación y footer
+   - Hojas de estilo CSS personalizadas (además de Bootstrap)
+   - Componentes reutilizables con estilo consistente
+   - Vista de dashboard con KPIs y gráficos
+
+4. **Scripts de base de datos**:
+   - Migraciones de EF Core
+   - Datos de prueba (seed)
+
+5. **Funcionalidades adicionales**:
+   - Vista de reportes con exportación
+   - Configuración de API y Swagger
+   - ARM template para despliegue
+
+## Estilo visual específico a implementar:
+
+- **Navbar**: Fija en la parte superior, fondo oscuro con logo y menús desplegables
+- **Botones**: Gradiente azul, bordes redondeados, sombras sutiles
+- **Tablas**: Filas con separación tenue, efecto hover, encabezados con fondo gris claro
+- **Formularios**: Campos con bordes redondeados, focos con sombra, agrupación por cards
+- **Tarjetas**: Sombras sutiles, bordes redondeados, encabezados con color diferenciado
+- **Colores principales**: 
+  - Primario: #0d6efd (azul profesional)
+  - Secundario: #6c757d (gris)
+  - Éxito: #198754 (verde)
+  - Peligro: #dc3545 (rojo)
+  - Fondo: #f8f9fa (gris muy claro)
+
+## Restricciones técnicas:
+- Usar .NET 8.0 exclusivamente
+- Entity Framework Core 8.x
+- Frontend con Razor Pages y estilos profesionales
+- Bootstrap 5.3 + personalización CSS
+- Font Awesome 6.0 para iconos
+- Todas las tablas en singular
+- Convención de nombres CamelCase
+
+Por favor, confirma que estás listo para recibir el archivo Excel y proceder con la generación de la solución completa según estas especificaciones, con especial atención en el diseño frontend profesional.

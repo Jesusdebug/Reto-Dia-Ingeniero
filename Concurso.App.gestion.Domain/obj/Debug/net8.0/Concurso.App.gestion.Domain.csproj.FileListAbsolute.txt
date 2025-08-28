@@ -9,3 +9,4 @@ C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Doma
 C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Domain\obj\Debug\net8.0\refint\Concurso.App.gestion.Domain.dll
 C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Domain\obj\Debug\net8.0\Concurso.App.gestion.Domain.pdb
 C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Domain\obj\Debug\net8.0\ref\Concurso.App.gestion.Domain.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Domain\obj\Debug\net8.0\Concurso.App.gestion.Domain.sourcelink.json

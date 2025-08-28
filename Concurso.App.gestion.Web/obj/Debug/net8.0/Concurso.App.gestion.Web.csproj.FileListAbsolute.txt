@@ -165,3 +165,4 @@ C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Web\
 C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Web\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Web\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Web\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Antonio\Desktop\ConcursoDiaIngenieroGlobalMVM\Concurso.App.gestion.Web\obj\Debug\net8.0\Concurso.App.gestion.Web.sourcelink.json
